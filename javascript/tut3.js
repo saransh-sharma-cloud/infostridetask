@@ -10,7 +10,7 @@ var city ="mohali"
 
 console.log(city);
  
-const ownerName =" elon musk";
+const name =" elon musk";
 
 console.log(ownerName);
 
