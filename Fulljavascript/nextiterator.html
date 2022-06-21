@@ -1,0 +1,21 @@
+<script>
+    myNumbers = {};
+myNumbers[Symbol.iterator] = function() {
+  let n = 0;
+  done = false;
+  return {
+    next() {
+      n += 10;
+      if (n == 100) {done = true}
+      return {value:n, done:done};
+    }
+  };
+}
+
+let text = "";
+for (const value of myNumbers) {
+    text += value + "\n" 
+}
+
+console.log(text);
+</script>

@@ -1,0 +1,19 @@
+<script>
+
+function* myGen()  {  
+yield 'First yield statement';  
+yield 'Second yield statement';  
+return 'Return statement';  
+yield 'Third yield statement';  
+}  
+let genobj = myGen();  
+  
+console.log(genobj.next()); 
+  
+console.log(genobj.next());  
+  
+console.log(genobj.next());   
+  
+console.log(genobj.next());
+
+</script>
