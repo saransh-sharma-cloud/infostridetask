@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+
+let a = "melon";
+let b = "lemson";
+function checkAnagram(a, b) {
+if(a.length !== b.length){
+    return false;
+} //not for same length and can not be anagram
+
+
+var str1 = a.split('').sort().join('');
+var str2 = b.split('').sort().join('');
+
+result =  str1 ==str2;
+return result;
+
+}
+console.log(checkAnagram(a, b));
+
+
+
+</script>
+</html>
