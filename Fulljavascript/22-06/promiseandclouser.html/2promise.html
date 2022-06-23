@@ -1,0 +1,26 @@
+<script>
+function display(hell){
+    console.log(hell);
+}
+var promise = new Promise(function(myResolve , myReject){
+
+    let x = 10;
+
+if(x<0){
+    myResolve('True');
+}
+else{
+    myReject('False');
+}
+
+
+
+});
+ promise.then(function(value)  {display(value);})
+ .catch(function(error) {display(error);})
+
+
+
+
+
+    </script>
