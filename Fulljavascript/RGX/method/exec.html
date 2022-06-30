@@ -1,0 +1,11 @@
+<script>
+    let reg = /saransh/;
+    reg = /saransh/g;          // g means global
+    reg = /saransh/i;          // i means case insensitive
+    
+    console.log(reg.source)    // soucrce will not create (//) in the output or console
+    
+    let s = "This is a great coding with saransh and SaRansh coder";
+    let result = reg.exec(s);
+    console.log(result);
+    </script>
